@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vite-sass-app-template/",
+    "build": "vite build --base=/sass-practice/",
     "preview": "vite preview",
     "watch": "npx vite build --watch"
   },
@@ -16,7 +16,7 @@
     "autoprefixer": "^10.4.4",
     "fast-glob": "^3.3.1",
     "imagemin": "^8.0.1",
-    "imagemin-webp": "^8.0.0",
+    "imagemin-webp": "^6.1.0",
     "postcss-sort-media-queries": "^5.2.0",
     "sass": "^1.68.0",
     "sharp": "^0.32.6",
