@@ -1,7 +1,7 @@
 // @use "../utils/mixin";
 // @use "../utils/variables" as v;
 
-@use "../utils/styles-forward" as frwd;
+@use "../utilities/styles-forward" as frwd;
 
 .badge {
     @include frwd.badge-base();
