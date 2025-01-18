@@ -1,14 +1,40 @@
-@use "sass:math";
-@use "btn-scema" as vars with (
-  $font-size: 10px,
-  $btn-color: black,
-  $btn-bgcolor: lightblue
-);
+%btn {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.5px;
+  color: #fafafb;
 
-.small-btn{
-    font-size: vars.$font-size;
-    color: vars.$btn-color;
-    background-color: vars.$btn-bgcolor;
+  background-color: #f07f2e;
+  border: none;
+  cursor: pointer;
+  transition: 300ms;
+
+  &:hover {
+    background-color: #f15c27;
+    box-shadow: 0px 4px 10px 0px rgba(240, 127, 46, 0.25);
+  }
 }
 
-@debug math.$pi;
+.btn-sm {
+  @extend %btn;
+
+  display: inline-flex;
+  padding: 4px 8px;
+}
+
+.btn-md {
+  @extend %btn;
+
+  display: inline-flex;
+  padding: 8px 12px;
+}
+
+.btn-lg {
+  @extend %btn;
+
+  display: inline-flex;
+  padding: 16px 20px;
+}
