@@ -1,16 +1,8 @@
-.badge {
-    display: inline-block;
-    min-width: 96px;
-    padding: 4px 8px;
+@use "../utilities/mixinі";
+@use "../utilities/variables";
 
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.07px;
-    text-align: center;
-    color: #ffff;
-
-    border-radius: 20px;
+.badge{
+    @include badge-base
 }
 
 .badge-completed {
