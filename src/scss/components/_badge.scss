@@ -1,18 +1,22 @@
-@use "../utilities/mixinі";
-@use "../utilities/variables";
+// @use "../utilities/mixin";
+// @use "../utilities/variables" as v;
+
+@use "../utilities//styles-forward" as forward;
 
 .badge{
-    @include badge-base
+    @include forward.badge-base();
+
+    color: forward.$badge-cl;
 }
 
 .badge-completed {
-    background-color: #a461d8;
+    background-color: forward.$completed;
 }
 
 .badge-ended {
-    background-color: #fc5a5a;
+    background-color: forward.$ended;
 }
 
 .badge-active {
-    background-color: #82c43c;
+    background-color: forward.$active;
 }

@@ -1,4 +1,4 @@
- @mixin badge {
+ @mixin badge-base() {
     display: inline-block;
     min-width: 96px;
     padding: 4px 8px;
