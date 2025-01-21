@@ -18,6 +18,7 @@
      -moz-box-align: center;
           align-items: center;
   gap: 50px;
+  margin: 0px;
   min-height: 100vh;
   font-family: sans-serif;
   background-color: #292932;
@@ -27,6 +28,7 @@
   font-size: 96px;
   font-weight: 600;
   color: #fafafb;
+  margin: 0;
 }
 
 .badge {
@@ -40,6 +42,7 @@
   text-align: center;
   color: white;
   border-radius: 20px;
+  color: white;
 }
 
 .badge-completed {
