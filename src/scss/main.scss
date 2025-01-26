@@ -16,8 +16,13 @@
 // @use "--examples--/lesson-06/ampersand";
 
 // Examples lesson 07
-@use "--examples--/lesson-07/math";
-@use "--examples--/lesson-07/task";
-@use "--examples--/lesson-07/badge";
-@use "base/font";
+// @use "--examples--/lesson-07/math";
+// @use "--examples--/lesson-07/task";
+// @use "--examples--/lesson-07/badge";
+// @use "base/font";
 // @use "components/task";
+
+// Examples lesson 09
+@use "base/font";
+@use "components/alert";
+@use "--examples--/lesson-09/extend";
