@@ -23,6 +23,11 @@
 // @use "components/task";
 
 // Examples lesson 09
+// @use "base/font";
+// @use "components/alert";
+// @use "--examples--/lesson-09/extend";
+
+// Examples lesson 10
 @use "base/font";
-@use "components/alert";
-@use "--examples--/lesson-09/extend";
+@use "components/button";
+@use "--examples--/lesson-10/mixins";
