@@ -1,22 +1,22 @@
 // Using mixin
-@mixin size($width, $height: $width) {
-    width: $width;
-    height: $height;
-}
+// @mixin size($width, $height: $width) {
+//     width: $width;
+//     height: $height;
+// }
 
 /* ===== Usage ===== */
-.icon {
-    @include size(40px);
+// .icon {
+//     @include size(40px);
 
-    border: 2px solid #F07F2E;
-}
+//     border: 2px solid #F07F2E;
+// }
 
-.avatar {
-    @include size(120px);
+// .avatar {
+//     @include size(120px);
 
-    border-radius: 50%;
-    overflow: hidden;
-}
+//     border-radius: 50%;
+//     overflow: hidden;
+// }
 
 
 // @mixin frame-size($width, $height: $width) {
@@ -114,7 +114,7 @@
 //                 $i * 4 - 4
 //             );
 
-//         @extend %btn;
+        // @extend %btn;
 
 //         padding: (4px + $factor) (8px + $factor);
 //         border-radius: (8px + $factor);
@@ -122,26 +122,27 @@
 // }
 // }
 
+
 // @include btn-size(".btn-sm", ".btn-md", ".btn-lg", ".btn-xl");
 
-// @use "sass:meta";
+@use "sass:meta";
 
-// @mixin btn-type($types...) {
+@mixin btn-type($types...) {
     // $types: (
     //   $success: lightgreen,
     //   $error: tomato,
     //   $info: lightblue,
     // );
 
-//     @each $name, $color in meta.keywords($types) {
-//         .btn-#{$name} {
-//             border: 2px solid $color;
-//             color: $color;
-//         }
-//     }
-// }
+    @each $name, $color in meta.keywords($types) {
+        .btn-#{$name} {
+            border: 2px solid $color;
+            color: $color;
+        }
+    }
+}
 
-// @include btn-type($success: lightgreen, $error: tomato, $info: lightblue);
+@include btn-type($success: lightgreen, $error: tomato, $info: lightblue);
 
 // @mixin hover($state) {
 //     &:not([#{$state}]):hover {
