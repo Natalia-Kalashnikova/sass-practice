@@ -1,77 +1,11 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-.btn-xl, .btn-lg, .btn-md, .btn-sm {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  /* 142.857% */
-  letter-spacing: 0.5px;
-  color: #fafafb;
-  background-color: #f07f2e;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
-.btn-xl:hover, .btn-lg:hover, .btn-md:hover, .btn-sm:hover {
-  background-color: #f15c27;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(240, 127, 46, 0.25);
-          box-shadow: 0px 4px 10px 0px rgba(240, 127, 46, 0.25);
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
-.btn-sm {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-box;
-  display: inline-flex;
-  padding: 4px 8px;
-}
-
-.btn-md {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-box;
-  display: inline-flex;
-  padding: 8px 12px;
-}
-
-.btn-lg {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-box;
-  display: inline-flex;
-  padding: 16px 20px;
-}
-
-.btn-xl {
-  padding: 16px 20px;
-  border-radius: 20px;
-}
-
-/* ===== Usage ===== */
-.btn-success {
-  border: 2px solid lightgreen;
-  color: lightgreen;
-}
-
-.btn-error {
-  border: 2px solid tomato;
-  color: tomato;
-}
-
-.btn-info {
-  border: 2px solid lightblue;
-  color: lightblue;
+.container {
+  width: 62.5rem;
 }
